@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/Laulhus/202201-W2CH3-edgaralcolea#readme",
   "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
     "husky": "^7.0.0",
     "jest": "^27.4.7"
   },
