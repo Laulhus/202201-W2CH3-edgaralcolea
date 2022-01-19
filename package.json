@@ -1,0 +1,28 @@
+{
+  "name": "w2ch3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laulhus/202201-W2CH3-edgaralcolea.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laulhus/202201-W2CH3-edgaralcolea/issues"
+  },
+  "homepage": "https://github.com/Laulhus/202201-W2CH3-edgaralcolea#readme",
+  "devDependencies": {
+    "husky": "^7.0.0",
+    "jest": "^27.4.7"
+  },
+  "dependencies": {
+    "@types/jest": "^27.4.0"
+  }
+}
