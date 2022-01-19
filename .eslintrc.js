@@ -12,5 +12,6 @@ module.exports = {
     "no-restricted-syntax": "off",
     "no-debugger": "off",
     "no-console": "off",
+    "no-alert": "off",
   },
 };
