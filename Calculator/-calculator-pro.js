@@ -1,31 +1,31 @@
-//Declaramos la función.
+//  Declaramos la función.
 function calculatorPRO() {
-  //Inicializamos variables y pedimos números al usuario.
+  //  Inicializamos variables y pedimos números al usuario.
   let newNumber;
-  let numberList = [];
+  const numberList = [];
   do {
     newNumber = prompt("Introduce un número o pulsa Cancelar para parar.");
-    if (isNaN(newNumber) || newNumber == "") {
+    if (Number.isNaN(newNumber) || newNumber === "") {
       alert("Formato no válido.");
     } else if (newNumber !== null) {
       newNumber = parseFloat(newNumber);
       numberList.push(newNumber);
     }
   } while (newNumber != null);
-  //Comprobamos si solo se ha introducido un número.
-  if (numberList.length == 1) {
+  //  Comprobamos si solo se ha introducido un número.
+  if (numberList.length === 1) {
     console.log(
       `Has introducid un solo número, su raíz cuadrada es ${
         Math.round(Math.sqrt(numberList[0]) * 1000) / 1000
       }`
     );
-    if (confirm("¿Desea realizar otra operación?")) {
+    if (window.confirm("¿Desea realizar otra operación?")) {
       calculatorPRO();
     } else {
       console.log("¡Adiós!");
-    return;
+      return;
     }
-    //Inicializamos y guardamos resultados.
+    //  Inicializamos y guardamos resultados.
   } else {
     let resultSum = 0;
     let resultRes = 0;
@@ -40,10 +40,10 @@ function calculatorPRO() {
     for (let j = 1; j < numberList.length; j++) {
       resultDiv /= numberList[j];
     }
-    //Guardamos resultados en un array.
-    let resultados = [];
+    //  Guardamos resultados en un array.
+    const resultados = [];
     resultados.push(resultSum, resultRes, resultMul, resultDiv);
-    //Mostramos resultados.
+    //  Mostramos resultados.
     console.log(
       `Resultados:\nDe la suma: ${resultados[0]}\nDe la resta: ${
         resultados[1]
@@ -52,8 +52,8 @@ function calculatorPRO() {
       )}\nDe la división: ${resultados[3].toFixed(3)}`
     );
   }
-  //Preguntamos al usuario si quiere volver a empezar.
-  if (confirm("¿Desea realizar otra operación?")) {
+  //  Preguntamos al usuario si quiere volver a empezar.
+  if (window.confirm("¿Desea realizar otra operación?")) {
     calculatorPRO();
   } else {
     console.log("¡Adiós!");
