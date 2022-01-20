@@ -61,7 +61,7 @@ function bingo() {
   //  Empieza turno.
   if (window.confirm("Bienvenido al Bingo ¿Empezamos?") === true) {
     while (contador < 500) {
-      const num = nuevoNum(numSalidos);
+      const num = nuevoNum();
       if (preguntaTurno(num) === false) {
         alert(`Has jugado ${contador} turnos! ¡Gracias por jugar!`);
         return;
